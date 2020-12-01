@@ -15,7 +15,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: purple;
+  background: url("https://www.freepptbackgrounds.net/wp-content/uploads/2019/04/Funny-Movies-Backgrounds.jpg")
+    no-repeat fixed center;
 }
 
 *,
