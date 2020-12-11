@@ -5,12 +5,12 @@
         <input
           v-model="searchTerm"
           type="text"
-          placeholder="SEARCH"
-          class="rounded-md lg:w-2/12 bg-gray-100 pl-4"
+          placeholder="Search for movie..."
+          class="rounded-md lg:w-2/12 bg-gray-100 pl-4 border-2 border-black text-black"
         />
         <button
           @click="search"
-          class="bg-blue-300 p-3 text-2xl rounded-md ml-4 text-white uppercase"
+          class="bg-yellow-300 p-4 pt-2 pb-2 text-2 rounded-md ml-4 text-dark uppercase"
         >
           Search
         </button>
@@ -20,7 +20,7 @@
       <div
         v-for="img of imgs"
         :key="img.title"
-        class="w-64 bg-purple-300 p-3 rounded-md mt-4"
+        class="w-64 bg-blue-500 p-2 rounded-md mt-5"
       >
         <img :src="img.poster" alt="" />
         <h3 class="text-xl font-extrabold">{{ img.title }}</h3>
@@ -87,4 +87,7 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+input::placeholder {
+  color: black;
+}
 </style>
